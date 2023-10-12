@@ -1,0 +1,13 @@
+[package]
+name = "sitemap-rustico"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4.31"
+# quick-xml = { version = "0.30.0", features = ["serde", "serialize", "arbitrary", "serde-types", "overlapped-lists", "document-features", "encoding", "encoding_rs"]}
+quick-xml = { version = "0.30.0", features = ["serialize"]}
+serde = "1.0.188"
+serde_derive = "1.0.188"
