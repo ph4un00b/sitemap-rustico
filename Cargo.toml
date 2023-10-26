@@ -7,6 +7,7 @@ edition = "2021"
 
 [dependencies]
 chrono = "0.4.31"
+gray_matter = "0.2.6"
 # quick-xml = { version = "0.30.0", features = ["serde", "serialize", "arbitrary", "serde-types", "overlapped-lists", "document-features", "encoding", "encoding_rs"]}
 quick-xml = { version = "0.30.0", features = ["serialize"]}
 serde = "1.0.188"
