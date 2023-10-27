@@ -1,4 +1,12 @@
-## external deps
+## external deps for debug
+- cat
+- awk
+- grep
+- xargs
+- windows: you can get plenty of unix utils from busybox
+    - `scoop install busybox`
+
+## external deps for scrapper
 - wget
 - grep
 - awk
