@@ -12,7 +12,10 @@ fn main() {
     tags.extend(articles_tags);
     //todo tags from dev-to, hash-node
     for tag in tags {
-        println!("blog/tags/{tag}");
+        //? the comma is important in order to respect the comma separation
+        //? format: "date,path"
+        // todo: find a way to fetch the last modified date❗
+        println!(",blog/tags/{tag}");
     }
 }
 
@@ -30,6 +33,7 @@ fn tags(path: &str) -> HashSet<String> {
             result
         })
         .map(|result| {
+            // * @see https://github.com/the-alchemists-of-arland/gray-matter-rs#basic-parsing
             #[derive(Deserialize, Debug)]
             struct FrontMatter {
                 tags: Vec<String>,
