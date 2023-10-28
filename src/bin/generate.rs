@@ -90,27 +90,31 @@ fn main() {
              */
             let base_url = "https://rustlanges.github.io";
             let parts: Vec<&str> = path.split('/').collect();
-            let url = match (parts[0], parts[1]) {
+            let (namespace, url) = match (parts[0], parts[1]) {
                 // todo: las páginas dinámicas sólo redirigen al /
                 // ?path is home/src/pages/path
-                ("home", "src") => {
-                    format!("{base_url}/")
-                }
-                ("blog", "articles") => {
-                    format!("{base_url}/blog/articles/{}.html", parts[2])
-                }
-                ("blog", "esta_semana_en_rust") => {
-                    format!("{base_url}/blog/articles/{}.html", parts[2])
-                }
-                ("blog", "tags") => format!("{base_url}/blog/tags/{}.html", parts[2]),
-                ("book", "src") => {
-                    format!("{base_url}/rust-book-es/{}.html", parts[2])
-                }
+                ("home", "src") => (format!("{}/{}", parts[0], parts[1]), format!("{base_url}/")),
+                ("blog", "articles") => (
+                    format!("{}/{}", parts[0], parts[1]),
+                    format!("{base_url}/blog/articles/{}.html", parts[2]),
+                ),
+                ("blog", "esta_semana_en_rust") => (
+                    format!("{}/{}", parts[0], parts[1]),
+                    format!("{base_url}/blog/articles/{}.html", parts[2]),
+                ),
+                ("blog", "tags") => (
+                    format!("{}/{}", parts[0], parts[1]),
+                    format!("{base_url}/blog/tags/{}.html", parts[2]),
+                ),
+                ("book", "src") => (
+                    format!("{}/{}", parts[0], parts[1]),
+                    format!("{base_url}/rust-book-es/{}.html", parts[2]),
+                ),
                 _ => panic!("invalid namespace❗: {parts:?}"),
             };
-            (date, url)
+            (date, namespace, url)
         })
-        .map(|(date, path)| Url {
+        .map(|(date, namespace, path)| Url {
             url: path.to_owned(),
             updated_at: if date.is_empty() {
                 // todo: if this is the case we need to find another way to fetch the real date
@@ -118,9 +122,24 @@ fn main() {
             } else {
                 Some(date.to_string())
             },
-            freq: Some(Changefreq {
-                field: Freq::Yearly,
-            }),
+            freq: match namespace.as_str() {
+                "home/src" => Some(Changefreq {
+                    field: Freq::Monthly,
+                }),
+                "blog/articles" => Some(Changefreq {
+                    field: Freq::Monthly,
+                }),
+                "blog/esta_semana_en_rust" => Some(Changefreq {
+                    field: Freq::Monthly,
+                }),
+                "blog/tags" => Some(Changefreq {
+                    field: Freq::Monthly,
+                }),
+                "book/src" => Some(Changefreq {
+                    field: Freq::Yearly,
+                }),
+                _ => panic!("invalid namespace❗: {namespace:?}"),
+            },
             priority: Some("1.0".to_string()),
         })
         .collect::<Vec<Url>>();
