@@ -1,3 +1,9 @@
+## testing workflow
+- docker
+- gh
+- act
+- act.exe -j test -s GITHUB_TOKEN="$(gh auth token)"
+
 ## external deps for debug
 - cat
 - awk
