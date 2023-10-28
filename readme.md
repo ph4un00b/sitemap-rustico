@@ -1,7 +1,17 @@
+## generate
+- ```sh
+  git clone https://github.com/RustLangES/blog.git
+  git clone https://github.com/RustLangES/RustLangES.github.io.git home
+  git clone https://github.com/RustLangES/rust-book-es.git book
+  ```
+- windows: `generate.bat`
+- unix: `generate.sh`
+
 ## testing workflow
-- docker
-- gh
-- act
+- deps:
+  - docker
+  - gh
+  - act
 - act.exe -j test -s GITHUB_TOKEN="$(gh auth token)"
 
 ## external deps for debug
