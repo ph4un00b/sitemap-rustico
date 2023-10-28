@@ -38,13 +38,13 @@ jobs:
           ./generate.sh
           git diff generated/dates_and_paths.txt
 
-      # - name: Commit changes
-      #   uses: EndBug/add-and-commit@v9
-      #   with:
-      #     committer_name: GitHub Actions
-      #     committer_email: actions@github.com
-      #     message: "Your commit message"
-      #     add: "*.js"
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          committer_name: GitHub Actions
+          committer_email: actions@github.com
+          message: "[${{ toJSON(github.event.client_payload.from) }}] update."
+          add: "generated/dates_and_paths.txt"
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
