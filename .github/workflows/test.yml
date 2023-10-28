@@ -4,6 +4,11 @@ on:
   repository_dispatch:
     types: [test]
 
+permissions:
+  contents: write
+  # pages: write #? to deploy to Pages
+  # id-token: write #? to verify the deployment originates from an appropriate source
+
 jobs:
   test:
     runs-on: ubuntu-latest
