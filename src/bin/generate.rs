@@ -140,7 +140,15 @@ fn main() {
                 }),
                 _ => panic!("invalid namespace❗: {namespace:?}"),
             },
-            priority: Some("1.0".to_string()),
+            priority: match namespace.as_str() {
+                "home/src" => Some("0.75".to_string()),
+                "blog/articles" => Some("0.75".to_string()),
+                "blog/esta_semana_en_rust" => Some("0.75".to_string()),
+                "blog/tags" => Some("0.75".to_string()),
+                "book/src" => Some("1.0".to_string()),
+                _ => panic!("invalid namespace❗: {namespace:?}"),
+            },
+            // priority: Some("1.0".to_string()),
         })
         .collect::<Vec<Url>>();
     /*
