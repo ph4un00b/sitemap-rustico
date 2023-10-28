@@ -10,8 +10,10 @@ fn main() {
     let mut tags = tags("./blog/esta_semana_en_rust");
     // println!("{:?}", tags.extend(articles_tags));
     tags.extend(articles_tags);
+    let mut sorted_tags: Vec<&String> = tags.iter().collect();
+    sorted_tags.sort();
     //todo tags from dev-to, hash-node
-    for tag in tags {
+    for tag in sorted_tags {
         //? the comma is important in order to respect the comma separation
         //? format: "date,path"
         // todo: find a way to fetch the last modified date❗
