@@ -57,7 +57,7 @@ struct Url {
 }
 
 fn main() {
-    let filename = "gen-merge.txt";
+    let filename = "dates_and_paths.txt";
 
     let ignore = [
         "book/src/SUMMARY",
@@ -65,7 +65,7 @@ fn main() {
         "home/src/pages/contributors", /* contributors.rs */
         "home/src/pages/mod",          /* mod.rs */
     ];
-    let content = std::fs::read_to_string(filename).expect("Failed to open to merged file");
+    let content = std::fs::read_to_string(filename).expect("Failed to open {filename} file");
 
     let items = content
         .lines()
@@ -75,14 +75,7 @@ fn main() {
             // * if err over here hence format err, check your commas❗
             (parts[0], parts[1])
         })
-        .filter(|(_date, path)| {
-            if ignore.contains(path) {
-                println!(">>>{path}");
-                false
-            } else {
-                true
-            }
-        })
+        .filter(|(_date, path)| !ignore.contains(path))
         .map(|(date, path)| {
             /*
              * structure samples:
@@ -98,8 +91,8 @@ fn main() {
             let parts: Vec<&str> = path.split('/').collect();
             let url = match (parts[0], parts[1]) {
                 // todo: las páginas dinámicas sólo redirigen al /
+                // ?path is home/src/pages/path
                 ("home", "src") => {
-                    // // ? since path is home/src/pages/path
                     format!("{base_url}/")
                 }
                 ("blog", "articles") => {
