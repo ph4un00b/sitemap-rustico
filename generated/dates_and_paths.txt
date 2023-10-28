@@ -110,10 +110,10 @@
 2023-09-28T16:51:30-03:00,book/src/ch20-03-graceful-shutdown-and-cleanup
 2023-04-04T19:14:02-06:00,book/src/foreword
 2023-06-08T07:33:15-03:00,book/src/title-page
-2023-10-13T07:31:36-04:00,book/src/pages/communidad
-2023-10-16T06:56:28-03:00,book/src/pages/contributors
-2023-10-16T05:44:35-03:00,book/src/pages/index
-2023-10-14T09:33:44-03:00,book/src/pages/mod
+2023-10-13T07:31:36-04:00,home/src/pages/communidad
+2023-10-16T06:56:28-03:00,home/src/pages/contributors
+2023-10-16T05:44:35-03:00,home/src/pages/index
+2023-10-14T09:33:44-03:00,home/src/pages/mod
 ,blog/tags/anuncio-de-la-comunidad
 ,blog/tags/comunidad
 ,blog/tags/data-type
