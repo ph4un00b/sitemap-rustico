@@ -8,11 +8,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: hi 🎈
-        run: |
-          ls -1
-          echo "One or more files in the docs folder has changed."
-
       # todo: cache unix deps https://github.com/actions/cache
       - name: Install xmllint
         run: sudo apt-get update && sudo apt-get install -y libxml2-utils
@@ -21,27 +16,27 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Cache dependencies
+      - name: Cache rust dependencies
         uses: Swatinem/rust-cache@v2
 
-      - name: ls
+      - name: clone repos
         run: |
           ls -1
           git clone https://github.com/RustLangES/blog.git
           git clone https://github.com/RustLangES/RustLangES.github.io.git home
           git clone https://github.com/RustLangES/rust-book-es.git book
 
-      - name: ls
+      - name: generate sitemap.xml
         run: |
           chmod +x generate.sh
           ./generate.sh
           ls -1
 
-      # - uses: "marvinpinto/action-automatic-releases@latest"
-      #   with:
-      #     repo_token: "${{ secrets.GITHUB_TOKEN }}"
-      #     automatic_release_tag: "canary"
-      #     prerelease: true
-      #     title: "Development Build"
-      #     files: |
-      #       sitemap.xml
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "canary"
+          prerelease: true
+          title: "Development Build"
+          files: |
+            sitemap.xml
