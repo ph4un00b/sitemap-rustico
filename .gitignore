@@ -1,5 +1,7 @@
 /target
 *.txt
+!generated/dates_and_paths.txt
+
 *.xml
 *.lock
 rustlang.github.io/

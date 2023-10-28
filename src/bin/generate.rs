@@ -57,7 +57,7 @@ struct Url {
 }
 
 fn main() {
-    let filename = "dates_and_paths.txt";
+    let filename = "generated/dates_and_paths.txt";
 
     let ignore = [
         "book/src/SUMMARY",
@@ -65,7 +65,8 @@ fn main() {
         "home/src/pages/contributors", /* contributors.rs */
         "home/src/pages/mod",          /* mod.rs */
     ];
-    let content = std::fs::read_to_string(filename).expect("Failed to open {filename} file");
+    let content = std::fs::read_to_string(filename)
+        .expect(format!("Failed to open '{filename}' file").as_str());
 
     let items = content
         .lines()
