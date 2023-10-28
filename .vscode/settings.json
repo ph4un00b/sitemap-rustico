@@ -1,7 +1,11 @@
 {
+  "cSpell.language": "en,es",
+  "rust-analyzer.check.command": "clippy",
+  "rust-analyzer.showUnlinkedFileNotification": false,
   "cSpell.words": [
     "changefreq",
     "chrono",
+    "communidad",
     "datetime",
     "lastmod",
     "reserialized",

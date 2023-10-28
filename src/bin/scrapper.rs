@@ -66,7 +66,7 @@ fn main() {
 
     //? awk -F 'URL:' '{print $2}'
     let cmd = Command::new("awk")
-        .args(&["-F", "URL:", "{print $2}", "./debug-grep.txt"])
+        .args(["-F", "URL:", "{print $2}", "./debug-grep.txt"])
         .output()
         .expect("Failed to execute command");
 
@@ -79,7 +79,7 @@ fn main() {
 
     //? trim spaces: awk '{$1=$1};1'
     let cmd = Command::new("awk")
-        .args(&["{$1=$1};1", "./debug-awk-1-column.txt"])
+        .args(["{$1=$1};1", "./debug-awk-1-column.txt"])
         .output()
         .expect("Failed to execute command");
 
@@ -91,7 +91,7 @@ fn main() {
     // println!("Stderr: {}", String::from_utf8_lossy(&awk.stderr));
     //? urls: awk '{print $1}'
     let cmd = Command::new("awk")
-        .args(&["{print $1}", "./debug-awk-2-trim.txt"])
+        .args(["{print $1}", "./debug-awk-2-trim.txt"])
         .output()
         .expect("Failed to execute command");
 
@@ -195,7 +195,7 @@ fn main() {
 fn iso_8601(system_time: &std::time::SystemTime) -> String {
     use chrono::prelude::{DateTime, Utc};
     // * @see https://www.w3.org/TR/NOTE-datetime
-    let datetime: DateTime<Utc> = system_time.clone().into();
+    let datetime: DateTime<Utc> = (*system_time).into();
     //? formats like "2001-07-08T00:34:60.026490+09:30"
     format!("{}", datetime.format("%+"))
 }

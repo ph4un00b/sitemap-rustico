@@ -29,10 +29,9 @@ fn tags(path: &str) -> HashSet<String> {
         .map(|entry| {
             let matter: Matter<YAML> = Matter::new();
             let raw = fs::read_to_string(entry.path()).expect("{entry:?} fail");
-            let result = matter.parse(&raw);
-            result
+            matter.parse(&raw)
         })
-        .map(|result| {
+        .flat_map(|result| {
             // * @see https://github.com/the-alchemists-of-arland/gray-matter-rs#basic-parsing
             #[derive(Deserialize, Debug)]
             struct FrontMatter {
@@ -41,8 +40,6 @@ fn tags(path: &str) -> HashSet<String> {
             let front_matter: FrontMatter = result.data.unwrap().deserialize().unwrap();
             front_matter.tags
         })
-        // .take(1)
-        .flatten()
         .map(|tag| tag.to_lowercase().replace(' ', "-"))
         .collect::<HashSet<String>>();
     result

@@ -66,7 +66,7 @@ fn main() {
         "home/src/pages/mod",          /* mod.rs */
     ];
     let content = std::fs::read_to_string(filename)
-        .expect(format!("Failed to open '{filename}' file").as_str());
+        .unwrap_or_else(|_| panic!("Failed to open '{filename}' file"));
 
     let items = content
         .lines()
@@ -159,7 +159,7 @@ fn validate_sitemap() {
 fn iso_8601(system_time: &std::time::SystemTime) -> String {
     use chrono::prelude::{DateTime, Utc};
     // * @see https://www.w3.org/TR/NOTE-datetime
-    let datetime: DateTime<Utc> = system_time.clone().into();
+    let datetime: DateTime<Utc> = (*system_time).into();
     //? formats like "2001-07-08T00:34:60.026490+09:30"
     format!("{}", datetime.format("%+"))
 }

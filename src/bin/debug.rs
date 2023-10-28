@@ -229,7 +229,7 @@ fn main() {
     // ? awk -F "." '{print $1}' .\generator-002-grep.txt
     let cmd = Command::new("awk")
         // .args(&["-F", ".", "-f", "awk.txt", generated_file])
-        .args(&["-F", ".", "{print $1}", generated_file])
+        .args(["-F", ".", "{print $1}", generated_file])
         .output()
         .expect("Err on awk");
 
