@@ -35,7 +35,15 @@ jobs:
         run: |
           chmod +x generate.sh
           ./generate.sh
-          ls -1
+          git status
+
+      # - name: Commit changes
+      #   uses: EndBug/add-and-commit@v9
+      #   with:
+      #     author_name: Your Name
+      #     author_email: mail@example.com
+      #     message: "Your commit message"
+      #     add: "*.js"
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
