@@ -25,6 +25,6 @@ charset = utf-8
 indent_style = space
 indent_size = 4
 # very special guys ¯\_( ͡° ͜ʖ ͡°)_/¯
-[*{.json,.yml,.prisma,.md}]
+[*{.json,.yml,.prisma,.md,.sh,.bat}]
 indent_style = space
 indent_size = 2

@@ -33,25 +33,15 @@ jobs:
 
       - name: ls
         run: |
-          chmod +x gen-articles.sh
-          ./gen-articles.sh > gen-articles.txt
-          chmod +x gen-weekly.sh
-          ./gen-weekly.sh > gen-weekly.txt
-          chmod +x gen-home.sh
-          ./gen-home.sh > gen-home.txt
-          chmod +x gen-book.sh
-          ./gen-book.sh > gen-book.txt
-          cargo run --bin tags > gen-tags.txt
-          cat gen-articles.txt gen-weekly.txt gen-book.txt gen-home.txt gen-tags.txt > dates_and_paths.txt
-          # cat dates_and_paths.txt
-          cargo run --bin generate
+          chmod +x generate.sh
+          ./generate.sh
           ls -1
 
-      - uses: "marvinpinto/action-automatic-releases@latest"
-        with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "canary"
-          prerelease: true
-          title: "Development Build"
-          files: |
-            sitemap.xml
+      # - uses: "marvinpinto/action-automatic-releases@latest"
+      #   with:
+      #     repo_token: "${{ secrets.GITHUB_TOKEN }}"
+      #     automatic_release_tag: "canary"
+      #     prerelease: true
+      #     title: "Development Build"
+      #     files: |
+      #       sitemap.xml
