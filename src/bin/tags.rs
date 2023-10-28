@@ -6,9 +6,7 @@ use std::fs;
 
 fn main() {
     let articles_tags = tags("./blog/articles");
-    // println!("{:?}", articles_tags);
     let mut tags = tags("./blog/esta_semana_en_rust");
-    // println!("{:?}", tags.extend(articles_tags));
     tags.extend(articles_tags);
     let mut sorted_tags: Vec<&String> = tags.iter().collect();
     sorted_tags.sort();
