@@ -1,8 +1,7 @@
-# * usage: act.exe -j test -s GITHUB_TOKEN="$(gh auth token)"
-name: test
+name: Create Sitemap
 on:
   repository_dispatch:
-    types: [test]
+    types: [modified_files]
 
 permissions:
   contents: write
@@ -40,15 +39,14 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           committer_name: GitHub Actions
-          committer_email: actions@github.com
+          committer_email: 41898282+github-actions[bot]@users.noreply.github.com
           message: "[${{ toJSON(github.event.client_payload.from) }}] update."
           add: "generated/dates_and_paths.txt"
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "canary"
-          prerelease: true
-          title: "Preview"
+          prerelease: false
+          title: "Sitemap"
           files: |
             sitemap.xml
