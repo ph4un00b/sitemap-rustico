@@ -1,7 +1,7 @@
 name: Create Sitemap
 on:
   repository_dispatch:
-    types: [modified_files]
+    types: [modified_pages]
 
 permissions:
   contents: write
