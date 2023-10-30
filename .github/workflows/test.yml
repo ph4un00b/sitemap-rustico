@@ -1,5 +1,5 @@
 # * usage: act.exe -j test -s GITHUB_TOKEN="$(gh auth token)"
-name: test
+name: test sitemap generation
 on:
   repository_dispatch:
     types: [test]
@@ -52,3 +52,9 @@ jobs:
           title: "Preview"
           files: |
             sitemap.xml
+
+      - name: Repository Dispatch
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          repository: ph4un00b/RustLangES.github.io
+          event-type: sitemap_changed
