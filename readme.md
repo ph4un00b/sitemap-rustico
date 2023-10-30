@@ -1,3 +1,7 @@
+## diagrama
+- [https://excalidraw.com/#json=3WjyGq26navNFA_6ST0Fd,MtXXo_sCj0VeW6OfTswl-g](https://excalidraw.com/#json=3WjyGq26navNFA_6ST0Fd,MtXXo_sCj0VeW6OfTswl-g)
+
+
 ## generate
 - ```sh
   git clone https://github.com/RustLangES/blog.git
