@@ -1,5 +1,8 @@
 name: Create Sitemap
 on:
+  schedule:
+    #? every sunday at 00:00
+    - cron: "0 0 * * 0"
   repository_dispatch:
     types: [modified_pages]
 
