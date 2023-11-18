@@ -1,5 +1,5 @@
-## diagrama
-- [https://excalidraw.com/#json=3WjyGq26navNFA_6ST0Fd,MtXXo_sCj0VeW6OfTswl-g](https://excalidraw.com/#json=3WjyGq26navNFA_6ST0Fd,MtXXo_sCj0VeW6OfTswl-g)
+## diagrama general
+- [https://excalidraw.com/#json=huU3UCnJK3nJJBUWd2EQ8,WGBe0SMz9VYgMuXIIgNZdg](https://excalidraw.com/#json=huU3UCnJK3nJJBUWd2EQ8,WGBe0SMz9VYgMuXIIgNZdg)
 
 
 ## generate
