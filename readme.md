@@ -1,3 +1,7 @@
+- antes de crear algún cambio modificar el diagrama❗
+
+![diagrama](diagrama.png)
+
 ## diagrama general
 - [https://excalidraw.com/#json=huU3UCnJK3nJJBUWd2EQ8,WGBe0SMz9VYgMuXIIgNZdg](https://excalidraw.com/#json=huU3UCnJK3nJJBUWd2EQ8,WGBe0SMz9VYgMuXIIgNZdg)
 
