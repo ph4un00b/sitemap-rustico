@@ -1,5 +1,5 @@
 2023-10-14T08:31:24-03:00,blog/articles/bienvenido
-2023-11-18T15:10:01+01:00,blog/articles/como-almacena-rust-los-enum-en-memoria
+2023-11-19T14:28:15+01:00,blog/articles/como-almacena-rust-los-enum-en-memoria
 2023-09-19T19:17:31-03:00,blog/articles/fundamentals-ownership
 2023-10-06T19:29:41-03:00,blog/articles/result-y-option-en-rust-tratamiento-de-errores-robusto-y-seguro
 2023-10-12T01:57:29-04:00,blog/articles/strings
@@ -9,6 +9,7 @@
 2023-11-03T00:14:05+00:00,blog/esta_semana_en_rust/2023-11-01-this-week-in-rust
 2023-11-11T00:39:03+00:00,blog/esta_semana_en_rust/2023-11-08-this-week-in-rust
 2023-11-18T00:40:19+00:00,blog/esta_semana_en_rust/2023-11-15-this-week-in-rust
+2023-11-25T01:46:40+00:00,blog/esta_semana_en_rust/2023-11-22-this-week-in-rust
 2023-09-17T22:48:40+02:00,book/src/SUMMARY
 2023-09-28T21:31:58-03:00,book/src/appendix-00
 2023-06-06T23:54:19-03:00,book/src/appendix-01-keywords
@@ -23,10 +24,10 @@
 2023-09-29T00:29:45-03:00,book/src/ch01-01-installation
 2023-09-29T00:29:45-03:00,book/src/ch01-02-hello-world
 2023-09-29T00:29:45-03:00,book/src/ch01-03-hello-cargo
-2023-09-29T00:29:45-03:00,book/src/ch02-00-guessing-game-tutorial
+2023-11-24T22:11:29-03:00,book/src/ch02-00-guessing-game-tutorial
 2023-04-04T20:21:23-03:00,book/src/ch03-00-common-programming-concepts
 2023-11-18T11:35:11-03:00,book/src/ch03-01-variables-and-mutability
-2023-09-29T00:29:45-03:00,book/src/ch03-02-data-types
+2023-11-24T21:38:04-03:00,book/src/ch03-02-data-types
 2023-04-06T18:55:08-03:00,book/src/ch03-03-how-functions-work
 2023-04-06T21:11:13-03:00,book/src/ch03-04-comments
 2023-09-29T00:29:45-03:00,book/src/ch03-05-control-flow
@@ -103,7 +104,7 @@
 2023-05-26T18:33:29-04:00,book/src/ch18-02-refutability
 2023-05-29T01:06:48-03:00,book/src/ch18-03-pattern-syntax
 2023-09-28T21:31:58-03:00,book/src/ch19-00-advanced-features
-2023-06-06T23:54:19-03:00,book/src/ch19-01-unsafe-rust
+2023-11-24T22:11:29-03:00,book/src/ch19-01-unsafe-rust
 2023-06-02T19:05:26-04:00,book/src/ch19-03-advanced-traits
 2023-06-02T19:05:26-04:00,book/src/ch19-04-advanced-types
 2023-06-02T19:05:26-04:00,book/src/ch19-05-advanced-functions-and-closures
@@ -113,7 +114,7 @@
 2023-06-06T23:54:19-03:00,book/src/ch20-02-multithreaded
 2023-09-28T16:51:30-03:00,book/src/ch20-03-graceful-shutdown-and-cleanup
 2023-04-04T19:14:02-06:00,book/src/foreword
-2023-06-08T07:33:15-03:00,book/src/title-page
+2023-11-24T22:11:29-03:00,book/src/title-page
 2023-10-13T07:31:36-04:00,home/src/pages/communidad
 2023-10-16T06:56:28-03:00,home/src/pages/contributors
 2023-10-16T05:44:35-03:00,home/src/pages/index
