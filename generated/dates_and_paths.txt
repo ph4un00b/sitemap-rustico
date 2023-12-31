@@ -14,6 +14,7 @@
 2023-12-09T00:50:32+00:00,blog/esta_semana_en_rust/2023-12-06-this-week-in-rust
 2023-12-16T00:40:55+00:00,blog/esta_semana_en_rust/2023-12-13-this-week-in-rust
 2023-12-23T00:39:08+00:00,blog/esta_semana_en_rust/2023-12-20-this-week-in-rust
+2023-12-30T00:39:47+00:00,blog/esta_semana_en_rust/2023-12-27-this-week-in-rust
 2023-09-17T22:48:40+02:00,book/src/SUMMARY
 2023-09-28T21:31:58-03:00,book/src/appendix-00
 2023-06-06T23:54:19-03:00,book/src/appendix-01-keywords
@@ -32,9 +33,9 @@
 2023-04-04T20:21:23-03:00,book/src/ch03-00-common-programming-concepts
 2023-11-18T11:35:11-03:00,book/src/ch03-01-variables-and-mutability
 2023-11-24T21:38:04-03:00,book/src/ch03-02-data-types
-2023-04-06T18:55:08-03:00,book/src/ch03-03-how-functions-work
+2023-12-23T18:09:07-03:00,book/src/ch03-03-how-functions-work
 2023-04-06T21:11:13-03:00,book/src/ch03-04-comments
-2023-09-29T00:29:45-03:00,book/src/ch03-05-control-flow
+2023-12-24T12:46:48-03:00,book/src/ch03-05-control-flow
 2023-04-06T22:38:39-03:00,book/src/ch04-00-understanding-ownership
 2023-09-29T00:29:45-03:00,book/src/ch04-01-what-is-ownership
 2023-09-28T21:54:45-03:00,book/src/ch04-02-references-and-borrowing
@@ -58,7 +59,7 @@
 2023-09-28T22:09:07-03:00,book/src/ch08-02-strings
 2023-06-08T07:33:15-03:00,book/src/ch08-03-hash-maps
 2023-05-29T00:24:13-03:00,book/src/ch09-00-error-handling
-2023-09-28T22:09:07-03:00,book/src/ch09-01-unrecoverable-errors-with-panic
+2023-12-17T16:57:02-05:00,book/src/ch09-01-unrecoverable-errors-with-panic
 2023-06-12T15:27:04-03:00,book/src/ch09-02-recoverable-errors-with-result
 2023-05-06T15:30:51-04:00,book/src/ch09-03-to-panic-or-not-to-panic
 2023-05-29T00:24:13-03:00,book/src/ch10-00-generics
@@ -74,7 +75,7 @@
 2023-05-17T15:31:18-04:00,book/src/ch12-02-reading-a-file
 2023-05-17T15:31:18-04:00,book/src/ch12-03-improving-error-handling-and-modularity
 2023-05-29T00:24:13-03:00,book/src/ch12-04-testing-the-librarys-functionality
-2023-05-17T15:31:18-04:00,book/src/ch12-05-working-with-environment-variables
+2023-12-17T16:57:02-05:00,book/src/ch12-05-working-with-environment-variables
 2023-05-17T15:31:18-04:00,book/src/ch12-06-writing-to-stderr-instead-of-stdout
 2023-05-29T00:24:13-03:00,book/src/ch13-00-functional-features
 2023-06-06T23:54:19-03:00,book/src/ch13-01-closures
