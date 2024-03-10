@@ -13,7 +13,7 @@
     git clone https://github.com/RustLangES/RustLangES.github.io.git home
     git clone https://github.com/RustLangES/rust-book-es.git book
     ```
-- run the script:
+- Sólo elegís el script para tu sistema, no tengas miedo de otros scripts de otros sistemas operativos.
   - windows: `generate.bat`
   - unix: `generate.sh`
 
