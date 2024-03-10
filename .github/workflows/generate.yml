@@ -37,7 +37,7 @@ jobs:
         run: |
           chmod +x generate.sh
           ./generate.sh
-          git diff generated/dates_and_paths.txt
+          # git diff generated/dates_and_paths.txt
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
