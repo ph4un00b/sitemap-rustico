@@ -88,7 +88,12 @@ fn main() {
              * blog/tag: BASE_URL/blog/tags/data-type.html
              * book: BASE_URL/rust-book-es/ch01-00-getting-started.html
              */
-            let base_url = "https://rustlanges.github.io";
+
+            /*
+             * 🔥 beware: esto modifica todo los enlaces❗❗
+             */
+            let base_url = "https://rustlang-es.org";
+
             let parts: Vec<&str> = path.split('/').collect();
             let (namespace, url) = match (parts[0], parts[1]) {
                 // todo: las páginas dinámicas sólo redirigen al /
