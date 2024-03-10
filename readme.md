@@ -17,6 +17,20 @@
   - windows: `generate.bat`
   - unix: `generate.sh`
 
+## ✨ Agregando un nuevo libro:
+
+- obtener los path que van ser indexados, por ejemplo:
+  - para el libro _rust para dotnet devs_:
+    - clonar el repositorio `https://github.com/RustLangES/rust-para-dotnet-devs.git`
+    - asignarle un nombre de una sola palabra `git clone https://github.com/RustLangES/rust-para-dotnet-devs.git dotnet`
+    - obtener los path de las nuevas páginas para ser indexadas.
+      - trae las archivos de forma recursiva: `git ls-tree -r --name-only HEAD --full-tree src/es`
+      - filtramos y formato: `grep "\.md$" | awk -F "." "{print $1}"`
+      - podes ver un ejemplo para bash o batch en `/scripts`
+    - agregar al `ignore_paths.rs` los path que no tienen sentido como:
+      - `dotnet/src/es/SUMMARY`,
+      - `dotnet/src/es/license`
+
 ## 🧪 testing workflow
 
 - deps:

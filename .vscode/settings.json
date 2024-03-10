@@ -7,10 +7,14 @@
     "chrono",
     "communidad",
     "datetime",
+    "devs",
+    "dotnet",
     "lastmod",
+    "linq",
     "reserialized",
     "rustico",
     "serde",
+    "structs",
     "timestamping",
     "urlset"
   ]

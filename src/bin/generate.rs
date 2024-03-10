@@ -64,6 +64,9 @@ fn main() {
         "home/src/pages/communidad",   /* communidad.rs */
         "home/src/pages/contributors", /* contributors.rs */
         "home/src/pages/mod",          /* mod.rs */
+        /* dotnet*/
+        "dotnet/src/es/SUMMARY",
+        "dotnet/src/es/license",
     ];
     let content = std::fs::read_to_string(filename)
         .unwrap_or_else(|_| panic!("Failed to open '{filename}' file"));
@@ -95,6 +98,7 @@ fn main() {
             let base_url = "https://rustlang-es.org";
 
             let parts: Vec<&str> = path.split('/').collect();
+            println!(">>>> {:?}", parts);
             let (namespace, url) = match (parts[0], parts[1]) {
                 // todo: las páginas dinámicas sólo redirigen al /
                 // ?path is home/src/pages/path
@@ -115,6 +119,23 @@ fn main() {
                     format!("{}/{}", parts[0], parts[1]),
                     format!("{base_url}/rust-book-es/{}.html", parts[2]),
                 ),
+                ("dotnet", "src") => {
+                    // println!(">>>>>{}/{}: {:?}", parts[0], parts[1], parts);
+                    if let Some(page) = parts.get(4) {
+                        (
+                            format!("{}/{}", parts[0], parts[1]),
+                            format!(
+                                "{base_url}/rust-para-dotnet-devs/{}/{}.html",
+                                parts[3], page
+                            ),
+                        )
+                    } else {
+                        (
+                            format!("{}/{}", parts[0], parts[1]),
+                            format!("{base_url}/rust-para-dotnet-devs/{}.html", parts[3]),
+                        )
+                    }
+                }
                 _ => panic!("invalid namespace❗: {parts:?}"),
             };
             (date, namespace, url)
@@ -143,6 +164,9 @@ fn main() {
                 "book/src" => Some(Changefreq {
                     field: Freq::Yearly,
                 }),
+                "dotnet/src" => Some(Changefreq {
+                    field: Freq::Yearly,
+                }),
                 _ => panic!("invalid namespace❗: {namespace:?}"),
             },
             priority: match namespace.as_str() {
@@ -151,6 +175,7 @@ fn main() {
                 "blog/esta_semana_en_rust" => Some("0.75".to_string()),
                 "blog/tags" => Some("0.75".to_string()),
                 "book/src" => Some("1.0".to_string()),
+                "dotnet/src" => Some("1.0".to_string()),
                 _ => panic!("invalid namespace❗: {namespace:?}"),
             },
             // priority: Some("1.0".to_string()),
