@@ -95,7 +95,7 @@ fn main() {
             /*
              * 🔥 beware: esto modifica todo los enlaces❗❗
              */
-            let base_url = "https://rustlang-es.org";
+            let base_url = "https://www.rustlang-es.org";
 
             let parts: Vec<&str> = path.split('/').collect();
             println!(">>>> {:?}", parts);
