@@ -120,7 +120,8 @@ fn main() {
                     format!("{base_url}/rust-book-es/{}", parts[2]),
                 ),
                 ("dotnet", "src") => {
-                    // println!(">>>>>{}/{}: {:?}", parts[0], parts[1], parts);
+                    println!(">>>>> 1 {}/{}", parts[0], parts[1]);
+                    println!(">>>>> 2 {}/{}", parts[2], parts[3]);
                     if let Some(page) = parts.get(4) {
                         (
                             format!("{}/{}", parts[0], parts[1]),
