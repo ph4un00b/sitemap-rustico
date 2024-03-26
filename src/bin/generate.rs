@@ -122,7 +122,15 @@ fn main() {
                 ("dotnet", "src") => {
                     println!(">>>>> 1 {}/{}", parts[0], parts[1]);
                     println!(">>>>> 2 {}/{}", parts[2], parts[3]);
-                    if let Some(page) = parts.get(4) {
+                    if let Some(page) = parts.get(5) {
+                        (
+                            format!("{}/{}", parts[0], parts[1]),
+                            format!(
+                                "{base_url}/rust-para-dotnet-devs/{}/{}/{}",
+                                parts[3], parts[4], page
+                            ),
+                        )
+                    } else if let Some(page) = parts.get(4) {
                         (
                             format!("{}/{}", parts[0], parts[1]),
                             format!(
