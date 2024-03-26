@@ -105,19 +105,19 @@ fn main() {
                 ("home", "src") => (format!("{}/{}", parts[0], parts[1]), format!("{base_url}/")),
                 ("blog", "articles") => (
                     format!("{}/{}", parts[0], parts[1]),
-                    format!("{base_url}/blog/articles/{}.html", parts[2]),
+                    format!("{base_url}/blog/articles/{}", parts[2]),
                 ),
                 ("blog", "esta_semana_en_rust") => (
                     format!("{}/{}", parts[0], parts[1]),
-                    format!("{base_url}/blog/articles/{}.html", parts[2]),
+                    format!("{base_url}/blog/articles/{}", parts[2]),
                 ),
                 ("blog", "tags") => (
                     format!("{}/{}", parts[0], parts[1]),
-                    format!("{base_url}/blog/tags/{}.html", parts[2]),
+                    format!("{base_url}/blog/tags/{}", parts[2]),
                 ),
                 ("book", "src") => (
                     format!("{}/{}", parts[0], parts[1]),
-                    format!("{base_url}/rust-book-es/{}.html", parts[2]),
+                    format!("{base_url}/rust-book-es/{}", parts[2]),
                 ),
                 ("dotnet", "src") => {
                     // println!(">>>>>{}/{}: {:?}", parts[0], parts[1], parts);
@@ -125,14 +125,14 @@ fn main() {
                         (
                             format!("{}/{}", parts[0], parts[1]),
                             format!(
-                                "{base_url}/rust-para-dotnet-devs/{}/{}.html",
+                                "{base_url}/rust-para-dotnet-devs/{}/{}",
                                 parts[3], page
                             ),
                         )
                     } else {
                         (
                             format!("{}/{}", parts[0], parts[1]),
-                            format!("{base_url}/rust-para-dotnet-devs/{}.html", parts[3]),
+                            format!("{base_url}/rust-para-dotnet-devs/{}", parts[3]),
                         )
                     }
                 }
