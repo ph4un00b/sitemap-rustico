@@ -18,7 +18,7 @@
 2024-02-20T03:13:25-03:00,dotnet/src/es/language/custom-types/structs
 2024-02-21T19:49:44-03:00,dotnet/src/es/language/discards
 2024-02-17T19:33:05-03:00,dotnet/src/es/language/documentation-comments
-2024-02-17T19:33:05-03:00,dotnet/src/es/language/equality
+2024-03-29T01:03:07-04:00,dotnet/src/es/language/equality
 2024-02-17T19:33:05-03:00,dotnet/src/es/language/exception-handling
 2024-02-17T19:33:05-03:00,dotnet/src/es/language/generics
 2024-02-17T19:33:05-03:00,dotnet/src/es/language/index
