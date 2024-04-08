@@ -1,3 +1,8 @@
+## before:
+
+* windows:
+  * scoop bucket add main
+  * scoop install main/libxml2
 ## 🍕 diagrama general
 
 ![diagrama](diagrama.png)

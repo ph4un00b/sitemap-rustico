@@ -71,15 +71,27 @@ fn main() {
     let content = std::fs::read_to_string(filename)
         .unwrap_or_else(|_| panic!("Failed to open '{filename}' file"));
 
+    use std::collections::HashSet;
+    let mut seen = HashSet::new();
+
     let items = content
         .lines()
-        // .take(3)
         .map(|line| {
             let parts: Vec<&str> = line.split(',').collect();
             // * if err over here hence format err, check your commas❗
             (parts[0], parts[1])
         })
         .filter(|(_date, path)| !ignore.contains(path))
+        .map(|(date, path)| {
+            let cleaned_path = if path.ends_with("/index") {
+                path.strip_suffix("/index").unwrap().to_string()
+            } else {
+                path.to_string()
+            };
+
+            (date, cleaned_path)
+        })
+        .filter(|(_date, path)| seen.insert(path.clone()))
         .map(|(date, path)| {
             /*
              * structure samples:
@@ -120,8 +132,6 @@ fn main() {
                     format!("{base_url}/rust-book-es/{}", parts[2]),
                 ),
                 ("dotnet", "src") => {
-                    println!(">>>>> 1 {}/{}", parts[0], parts[1]);
-                    println!(">>>>> 2 {}/{}", parts[2], parts[3]);
                     if let Some(page) = parts.get(5) {
                         (
                             format!("{}/{}", parts[0], parts[1]),
