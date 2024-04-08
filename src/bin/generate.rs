@@ -83,12 +83,7 @@ fn main() {
         })
         .filter(|(_date, path)| !ignore.contains(path))
         .map(|(date, path)| {
-            let cleaned_path = if path.ends_with("/index") {
-                path.strip_suffix("/index").unwrap().to_string()
-            } else {
-                path.to_string()
-            };
-
+            let cleaned_path = path.strip_suffix("/index").unwrap_or(path).to_string();
             (date, cleaned_path)
         })
         .filter(|(_date, path)| seen.insert(path.clone()))
@@ -217,6 +212,8 @@ fn main() {
     write!(file, "{}", xml).expect("Failed to write sitemap.xml file");
 
     validate_sitemap();
+    println!("👀 total links:");
+    println!("{}", seen.len());
 }
 
 fn validate_sitemap() {
