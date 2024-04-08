@@ -77,8 +77,10 @@ fn main() {
     let items = content
         .lines()
         .map(|line| {
-            let parts: Vec<&str> = line.split(',').collect();
-            // * if err over here hence format err, check your commas❗
+            let parts: Vec<&str> = line.splitn(2, ',').collect();
+            if parts.len() != 2 {
+                panic!("Expected each line to contain exactly one comma.");
+            }
             (parts[0], parts[1])
         })
         .filter(|(_date, path)| !ignore.contains(path))
@@ -86,6 +88,7 @@ fn main() {
             let cleaned_path = path.strip_suffix("/index").unwrap_or(path).to_string();
             (date, cleaned_path)
         })
+        // filter duplicated paths
         .filter(|(_date, path)| seen.insert(path.clone()))
         .map(|(date, path)| {
             /*
