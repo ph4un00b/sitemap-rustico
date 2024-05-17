@@ -94,7 +94,7 @@ fn main() {
         })
         // filter duplicated paths
         .filter(|(_date, path)| seen.insert(path.clone()))
-        .map(|(date, path)| {
+        .map(|(date, full_path)| {
             /*
              * structure samples:
              *
@@ -117,18 +117,18 @@ fn main() {
             subdominios.insert("book", "https://book.rustlang-es.org");
             subdominios.insert("dotnet", "https://dotnet-book.rustlang-es.org");
 
-            let parts: Vec<&str> = path.split('/').collect();
+            let sub_folders: Vec<&str> = full_path.split('/').collect();
 
-            println!(">>>> {:?}", parts);
+            println!(">>>> {:?}", sub_folders);
             
-            let (namespace, url) = match (parts[0], parts[1]) {
+            let (namespace, url) = match (sub_folders[0], sub_folders[1]) {
                 // todo: las páginas dinámicas sólo redirigen al /
                 // ?path is home/src/pages/path
                 ("home", "src") => {
-                    let namespace = format!("{}/{}", parts[0], parts[1]);
+                    let namespace = format!("{}/{}", sub_folders[0], sub_folders[1]);
                     let base_url = subdominios.get("home").unwrap();
 
-                    if let Some(page) = parts.get(3) {
+                    if let Some(page) = sub_folders.get(3) {
                         let string_url = format!("{base_url}/{}", page);
                         (namespace, string_url)
                     } else {
@@ -138,53 +138,53 @@ fn main() {
                 },
 
                 ("blog", "articles") => {
-                    let namespace = format!("{}/{}", parts[0], parts[1]);
+                    let namespace = format!("{}/{}", sub_folders[0], sub_folders[1]);
                     let base_url = subdominios.get("blog").unwrap();
-                    let string_url = format!("{base_url}/articles/{}", parts[2]);
+                    let string_url = format!("{base_url}/articles/{}", sub_folders[2]);
 
                     (namespace, string_url)
                 },
 
                 ("blog", "esta_semana_en_rust") => {
-                    let namespace = format!("{}/{}", parts[0], parts[1]);
+                    let namespace = format!("{}/{}", sub_folders[0], sub_folders[1]);
                     let base_url = subdominios.get("blog").unwrap();
-                    let string_url = format!("{base_url}/articles/{}", parts[2]);
+                    let string_url = format!("{base_url}/articles/{}", sub_folders[2]);
 
                     (namespace, string_url)
                 }
 
                 ("blog", "tags") => {
-                    let namespace = format!("{}/{}", parts[0], parts[1]);
+                    let namespace = format!("{}/{}", sub_folders[0], sub_folders[1]);
                     let base_url = subdominios.get("blog").unwrap();
-                    let string_url = format!("{base_url}/blog/tags/{}", parts[2]);
+                    let string_url = format!("{base_url}/blog/tags/{}", sub_folders[2]);
 
                     (namespace, string_url)
                 }
 
                 ("book", "src") => {
-                    let namespace = format!("{}/{}", parts[0], parts[1]);
+                    let namespace = format!("{}/{}", sub_folders[0], sub_folders[1]);
                     let base_url = subdominios.get("book").unwrap();
-                    let string_url = format!("{base_url}/{}", parts[2]);
+                    let string_url = format!("{base_url}/{}", sub_folders[2]);
 
                     (namespace, string_url)
                 }
 
                 ("dotnet", "src") => {
-                    let namespace = format!("{}/{}", parts[0], parts[1]);
+                    let namespace = format!("{}/{}", sub_folders[0], sub_folders[1]);
                     let base_url = subdominios.get("dotnet").unwrap();
 
-                    if let Some(page) = parts.get(5) {
-                        let string_url = format!("{base_url}/{}/{}/{}", parts[3], parts[4], page);
+                    if let Some(page) = sub_folders.get(5) {
+                        let string_url = format!("{base_url}/{}/{}/{}", sub_folders[3], sub_folders[4], page);
                         (namespace, string_url)
-                    } else if let Some(page) = parts.get(4) {
-                        let string_url = format!("{base_url}/{}/{}", parts[3], page);
+                    } else if let Some(page) = sub_folders.get(4) {
+                        let string_url = format!("{base_url}/{}/{}", sub_folders[3], page);
                         (namespace, string_url)
                     } else {
-                        let string_url = format!("{base_url}/{}", parts[3]);
+                        let string_url = format!("{base_url}/{}", sub_folders[3]);
                         (namespace, string_url)
                     }
                 }
-                _ => panic!("invalid namespace❗: {parts:?}"),
+                _ => panic!("invalid namespace❗: {sub_folders:?}"),
             };
 
             println!("{:?}\n", url);
