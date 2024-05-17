@@ -107,10 +107,14 @@ fn main() {
             /*
              * 🔥 beware: esto modifica todo los enlaces❗❗
              */
-            let base_url = "https://www.rustlang-es.org";
+             let dominio = "rustlang-es.org";
+             let base_subdomain = "www";
+             let base_url = "https://www.rustlang-es.org";
 
             let parts: Vec<&str> = path.split('/').collect();
+
             println!(">>>> {:?}", parts);
+            
             let (namespace, url) = match (parts[0], parts[1]) {
                 // todo: las páginas dinámicas sólo redirigen al /
                 // ?path is home/src/pages/path
@@ -157,6 +161,8 @@ fn main() {
                 }
                 _ => panic!("invalid namespace❗: {parts:?}"),
             };
+
+            println!("{:?}\n", url);
             (date, namespace, url)
         })
         .map(|(date, namespace, path)| Url {
