@@ -1,3 +1,4 @@
+use std::collections::HashMap;
 use std::io::Write;
 use std::{fs::File, process::Command};
 /*
@@ -59,12 +60,13 @@ struct Url {
 }
 
 fn main() {
+
     let filename = "generated/dates_and_paths.txt";
 
     let ignore = [
         "book/src/SUMMARY",
-        "home/src/pages/communidad",   /* communidad.rs */
-        "home/src/pages/contributors", /* contributors.rs */
+        // "home/src/pages/communidad",   /* communidad.rs */
+        // "home/src/pages/contributors", /* contributors.rs */
         "home/src/pages/mod",          /* mod.rs */
         /* dotnet*/
         "dotnet/src/es/SUMMARY",
@@ -107,9 +109,13 @@ fn main() {
             /*
              * 🔥 beware: esto modifica todo los enlaces❗❗
              */
+
              let dominio = "rustlang-es.org";
-             let base_subdomain = "www";
-             let base_url = "https://www.rustlang-es.org";
+             let mut subdominios = HashMap::new();
+            subdominios.insert("home", "https://rustlang-es.org");
+            subdominios.insert("blog", "https://blog.rustlang-es.org");
+            subdominios.insert("book", "https://book.rustlang-es.org");
+            subdominios.insert("dotnet", "https://dotnet-book.rustlang-es.org");
 
             let parts: Vec<&str> = path.split('/').collect();
 
@@ -118,45 +124,64 @@ fn main() {
             let (namespace, url) = match (parts[0], parts[1]) {
                 // todo: las páginas dinámicas sólo redirigen al /
                 // ?path is home/src/pages/path
-                ("home", "src") => (format!("{}/{}", parts[0], parts[1]), format!("{base_url}/")),
-                ("blog", "articles") => (
-                    format!("{}/{}", parts[0], parts[1]),
-                    format!("{base_url}/blog/articles/{}", parts[2]),
-                ),
-                ("blog", "esta_semana_en_rust") => (
-                    format!("{}/{}", parts[0], parts[1]),
-                    format!("{base_url}/blog/articles/{}", parts[2]),
-                ),
-                ("blog", "tags") => (
-                    format!("{}/{}", parts[0], parts[1]),
-                    format!("{base_url}/blog/tags/{}", parts[2]),
-                ),
-                ("book", "src") => (
-                    format!("{}/{}", parts[0], parts[1]),
-                    format!("{base_url}/rust-book-es/{}", parts[2]),
-                ),
-                ("dotnet", "src") => {
-                    if let Some(page) = parts.get(5) {
-                        (
-                            format!("{}/{}", parts[0], parts[1]),
-                            format!(
-                                "{base_url}/rust-para-dotnet-devs/{}/{}/{}",
-                                parts[3], parts[4], page
-                            ),
-                        )
-                    } else if let Some(page) = parts.get(4) {
-                        (
-                            format!("{}/{}", parts[0], parts[1]),
-                            format!(
-                                "{base_url}/rust-para-dotnet-devs/{}/{}",
-                                parts[3], page
-                            ),
-                        )
+                ("home", "src") => {
+                    let namespace = format!("{}/{}", parts[0], parts[1]);
+                    let base_url = subdominios.get("home").unwrap();
+
+                    if let Some(page) = parts.get(3) {
+                        let string_url = format!("{base_url}/{}", page);
+                        (namespace, string_url)
                     } else {
-                        (
-                            format!("{}/{}", parts[0], parts[1]),
-                            format!("{base_url}/rust-para-dotnet-devs/{}", parts[3]),
-                        )
+                        let string_url = format!("{base_url}/");
+                        (namespace, string_url)
+                    }
+                },
+
+                ("blog", "articles") => {
+                    let namespace = format!("{}/{}", parts[0], parts[1]);
+                    let base_url = subdominios.get("blog").unwrap();
+                    let string_url = format!("{base_url}/articles/{}", parts[2]);
+
+                    (namespace, string_url)
+                },
+
+                ("blog", "esta_semana_en_rust") => {
+                    let namespace = format!("{}/{}", parts[0], parts[1]);
+                    let base_url = subdominios.get("blog").unwrap();
+                    let string_url = format!("{base_url}/articles/{}", parts[2]);
+
+                    (namespace, string_url)
+                }
+
+                ("blog", "tags") => {
+                    let namespace = format!("{}/{}", parts[0], parts[1]);
+                    let base_url = subdominios.get("blog").unwrap();
+                    let string_url = format!("{base_url}/blog/tags/{}", parts[2]);
+
+                    (namespace, string_url)
+                }
+
+                ("book", "src") => {
+                    let namespace = format!("{}/{}", parts[0], parts[1]);
+                    let base_url = subdominios.get("book").unwrap();
+                    let string_url = format!("{base_url}/{}", parts[2]);
+
+                    (namespace, string_url)
+                }
+
+                ("dotnet", "src") => {
+                    let namespace = format!("{}/{}", parts[0], parts[1]);
+                    let base_url = subdominios.get("dotnet").unwrap();
+
+                    if let Some(page) = parts.get(5) {
+                        let string_url = format!("{base_url}/{}/{}/{}", parts[3], parts[4], page);
+                        (namespace, string_url)
+                    } else if let Some(page) = parts.get(4) {
+                        let string_url = format!("{base_url}/{}/{}", parts[3], page);
+                        (namespace, string_url)
+                    } else {
+                        let string_url = format!("{base_url}/{}", parts[3]);
+                        (namespace, string_url)
                     }
                 }
                 _ => panic!("invalid namespace❗: {parts:?}"),
