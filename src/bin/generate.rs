@@ -2,8 +2,10 @@ use std::io::Write;
 use std::{fs::File, process::Command};
 /*
  * usage:
- * cargo run --bin generate
- *
+ * 
+ * windows: ./generate.bat
+ * unix: ./generate.sh
+ * 
  * @see https://www.sitemaps.org/protocol.html
  * @see https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap
  * @see https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap#addsitemap

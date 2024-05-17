@@ -1,14 +1,20 @@
-## before:
+## install:
 
 * windows:
+  * scoop: https://scoop.sh/
   * scoop bucket add main
+  * scoop install main/busybox
   * scoop install main/libxml2
+
+* unix:
+  * libxml2
+
 ## 🍕 diagrama general
 
 ![diagrama](diagrama.png)
 
-- antes de crear algún cambio modificar el diagrama❗
-- [https://excalidraw.com/#json=huU3UCnJK3nJJBUWd2EQ8,WGBe0SMz9VYgMuXIIgNZdg](https://excalidraw.com/#json=huU3UCnJK3nJJBUWd2EQ8,WGBe0SMz9VYgMuXIIgNZdg)
+- (buena practica) antes de crear algún cambio modificar el diagrama❗
+- [diagrama](https://excalidraw.com/#json=-Q7YuEfpfYP3Qz52P9QrW,UYLXEYM7G2KjSCTfwbt9hw)
 
 ## 🍔 Instructions
 
