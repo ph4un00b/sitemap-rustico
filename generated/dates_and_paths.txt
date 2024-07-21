@@ -79,6 +79,7 @@
 2024-06-15T00:43:32Z,blog/esta_semana_en_rust/2024-06-12-this-week-in-rust
 2024-06-29T00:43:28Z,blog/esta_semana_en_rust/2024-06-26-this-week-in-rust
 2024-07-06T00:43:16Z,blog/esta_semana_en_rust/2024-07-03-this-week-in-rust
+2024-07-20T00:44:51Z,blog/esta_semana_en_rust/2024-07-17-this-week-in-rust
 2024-02-24T23:23:52-03:00,book/src/SUMMARY
 2023-09-28T21:31:58-03:00,book/src/appendix-00
 2023-06-06T23:54:19-03:00,book/src/appendix-01-keywords
@@ -186,7 +187,7 @@
 2024-05-25T00:51:01-03:00,book/src/title-page
 2024-02-20T18:17:18-04:00,home/src/pages/aprende
 2024-04-30T21:53:24-03:00,home/src/pages/communities
-2024-04-29T12:01:35-04:00,home/src/pages/contributors
+2024-07-18T13:41:50-04:00,home/src/pages/contributors
 2024-02-20T18:17:18-04:00,home/src/pages/index
 2024-04-30T21:53:24-03:00,home/src/pages/mod
 2024-04-30T21:53:24-03:00,home/src/pages/projects
