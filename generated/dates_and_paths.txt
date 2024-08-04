@@ -1,10 +1,10 @@
-2024-05-26T01:46:41-03:00,dotnet/src/es/SUMMARY
+2024-07-30T00:16:47-03:00,dotnet/src/es/SUMMARY
 2024-02-17T19:33:05-03:00,dotnet/src/es/asynchronous-programming/index
 2024-05-25T14:56:16-03:00,dotnet/src/es/benchmarking/index
-2024-02-17T19:33:05-03:00,dotnet/src/es/compilation-and-building/index
+2024-07-30T00:16:47-03:00,dotnet/src/es/compilation-and-building/index
 2024-05-25T17:39:31-03:00,dotnet/src/es/conditional-compilation/index
 2024-02-17T19:33:05-03:00,dotnet/src/es/contributing
-2024-02-17T19:33:05-03:00,dotnet/src/es/environment-and-configuration/index
+2024-07-29T23:41:04-03:00,dotnet/src/es/environment-and-configuration/index
 2024-02-17T19:33:05-03:00,dotnet/src/es/getting-started/index
 2024-02-18T02:11:27-03:00,dotnet/src/es/introduction
 2024-05-17T01:59:40-04:00,dotnet/src/es/language/conversion-and-casting
