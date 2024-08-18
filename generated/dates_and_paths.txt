@@ -95,7 +95,7 @@
 2024-05-25T00:51:01-03:00,book/src/ch01-01-installation
 2024-05-25T00:51:01-03:00,book/src/ch01-02-hello-world
 2024-05-25T00:51:01-03:00,book/src/ch01-03-hello-cargo
-2024-05-25T00:51:01-03:00,book/src/ch02-00-guessing-game-tutorial
+2024-08-09T10:42:10+02:00,book/src/ch02-00-guessing-game-tutorial
 2023-04-04T20:21:23-03:00,book/src/ch03-00-common-programming-concepts
 2024-02-24T23:23:52-03:00,book/src/ch03-01-variables-and-mutability
 2024-05-27T22:03:57-03:00,book/src/ch03-02-data-types
