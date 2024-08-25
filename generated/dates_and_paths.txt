@@ -188,7 +188,7 @@
 2024-05-25T00:51:01-03:00,book/src/title-page
 2024-02-20T18:17:18-04:00,home/src/pages/aprende
 2024-04-30T21:53:24-03:00,home/src/pages/communities
-2024-07-18T13:41:50-04:00,home/src/pages/contributors
+2024-08-21T23:18:57-03:00,home/src/pages/contributors
 2024-06-02T00:47:07-03:00,home/src/pages/index
 2024-04-30T21:53:24-03:00,home/src/pages/mod
 2024-04-30T21:53:24-03:00,home/src/pages/projects
