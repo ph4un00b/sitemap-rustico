@@ -1,5 +1,5 @@
 2024-07-30T00:16:47-03:00,dotnet/src/es/SUMMARY
-2024-02-17T19:33:05-03:00,dotnet/src/es/asynchronous-programming/index
+2024-09-15T22:46:01-04:00,dotnet/src/es/asynchronous-programming/index
 2024-05-25T14:56:16-03:00,dotnet/src/es/benchmarking/index
 2024-07-30T00:16:47-03:00,dotnet/src/es/compilation-and-building/index
 2024-05-25T17:39:31-03:00,dotnet/src/es/conditional-compilation/index
@@ -38,12 +38,12 @@
 2024-09-09T04:12:20-03:00,dotnet/src/es/linq/index
 2024-05-25T15:09:17-03:00,dotnet/src/es/logging-and-tracing/index
 2024-05-25T04:54:51-03:00,dotnet/src/es/memory-management/index
-2024-02-17T19:33:05-03:00,dotnet/src/es/meta-programming/index
+2024-09-15T23:06:00-04:00,dotnet/src/es/meta-programming/index
 2024-05-26T01:46:41-03:00,dotnet/src/es/project-structure/index
 2024-05-01T22:36:41-03:00,dotnet/src/es/resource-management/index
 2024-05-25T14:50:21-03:00,dotnet/src/es/testing/index
 2024-05-25T12:01:22-03:00,dotnet/src/es/threading/index
-2024-05-25T14:50:21-03:00,dotnet/src/es/threading/producer-consumer
+2024-09-15T23:07:17-04:00,dotnet/src/es/threading/producer-consumer
 2024-05-25T12:24:16-03:00,dotnet/src/es/threading/synchronization
 2024-03-05T02:14:23-03:00,blog/articles/bienvenido
 2023-11-19T14:28:15+01:00,blog/articles/como-almacena-rust-los-enum-en-memoria
@@ -130,7 +130,7 @@
 2024-05-25T00:51:01-03:00,book/src/ch09-02-recoverable-errors-with-result
 2024-02-24T23:23:52-03:00,book/src/ch09-03-to-panic-or-not-to-panic
 2024-05-14T10:58:03-03:00,book/src/ch10-00-generics
-2024-05-14T10:58:03-03:00,book/src/ch10-01-syntax
+2024-09-15T03:05:23-03:00,book/src/ch10-01-syntax
 2024-05-14T10:58:03-03:00,book/src/ch10-02-traits
 2024-05-14T10:58:03-03:00,book/src/ch10-03-lifetime-syntax
 2023-05-06T17:27:22-04:00,book/src/ch11-00-testing
