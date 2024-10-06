@@ -190,7 +190,7 @@
 2024-02-20T18:17:18-04:00,home/src/pages/aprende
 2024-04-30T21:53:24-03:00,home/src/pages/communities
 2024-08-21T23:18:57-03:00,home/src/pages/contributors
-2024-06-02T00:47:07-03:00,home/src/pages/index
+2024-09-10T00:18:03-06:00,home/src/pages/index
 2024-04-30T21:53:24-03:00,home/src/pages/mod
 2024-04-30T21:53:24-03:00,home/src/pages/projects
 ,blog/tags/angular
