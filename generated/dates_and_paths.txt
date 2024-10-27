@@ -83,7 +83,8 @@
 2024-07-27T00:45:31Z,blog/esta_semana_en_rust/2024-07-24-this-week-in-rust
 2024-09-14T00:50:18Z,blog/esta_semana_en_rust/2024-09-11-this-week-in-rust
 2024-10-12T00:52:07Z,blog/esta_semana_en_rust/2024-10-09-this-week-in-rust
-2024-10-19T00:53:10Z,blog/esta_semana_en_rust/2024-10-16-this-week-in-rust
+2024-10-23T22:08:56Z,blog/esta_semana_en_rust/2024-10-16-this-week-in-rust
+2024-10-26T00:52:38Z,blog/esta_semana_en_rust/2024-10-23-this-week-in-rust
 2024-02-24T23:23:52-03:00,book/src/SUMMARY
 2023-09-28T21:31:58-03:00,book/src/appendix-00
 2023-06-06T23:54:19-03:00,book/src/appendix-01-keywords
@@ -125,7 +126,7 @@
 2024-02-24T11:33:21-03:00,book/src/ch07-05-separating-modules-into-different-files
 2024-05-25T00:51:01-03:00,book/src/ch08-00-common-collections
 2024-05-25T00:51:01-03:00,book/src/ch08-01-vectors
-2024-05-25T01:05:30-03:00,book/src/ch08-02-strings
+2024-10-26T19:43:42-04:00,book/src/ch08-02-strings
 2024-05-25T00:51:01-03:00,book/src/ch08-03-hash-maps
 2024-05-27T22:03:57-03:00,book/src/ch09-00-error-handling
 2024-05-27T22:03:57-03:00,book/src/ch09-01-unrecoverable-errors-with-panic
