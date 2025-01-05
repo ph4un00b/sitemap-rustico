@@ -46,6 +46,7 @@
 2024-09-15T23:07:17-04:00,dotnet/src/es/threading/producer-consumer
 2024-05-25T12:24:16-03:00,dotnet/src/es/threading/synchronization
 2024-03-05T02:14:23-03:00,blog/articles/bienvenido
+2024-12-29T03:09:28-03:00,blog/articles/cargo-generate
 2023-11-19T14:28:15+01:00,blog/articles/como-almacena-rust-los-enum-en-memoria
 2024-03-05T02:14:23-03:00,blog/articles/fundamentals-ownership
 2024-05-25T03:05:10-03:00,blog/articles/hicimos-el-sitio-web-de-nuestra-boda-en-angular-y-rust-pk8
@@ -94,6 +95,7 @@
 2024-12-14T00:57:14Z,blog/esta_semana_en_rust/2024-12-11-this-week-in-rust
 2024-12-21T00:53:16Z,blog/esta_semana_en_rust/2024-12-18-this-week-in-rust
 2024-12-28T00:52:57Z,blog/esta_semana_en_rust/2024-12-25-this-week-in-rust
+2025-01-04T00:53:06Z,blog/esta_semana_en_rust/2025-01-01-this-week-in-rust
 2024-02-24T23:23:52-03:00,book/src/SUMMARY
 2023-09-28T21:31:58-03:00,book/src/appendix-00
 2023-06-06T23:54:19-03:00,book/src/appendix-01-keywords
@@ -107,14 +109,14 @@
 2023-04-02T14:18:48-03:00,book/src/ch01-00-getting-started
 2024-05-25T00:51:01-03:00,book/src/ch01-01-installation
 2024-05-25T00:51:01-03:00,book/src/ch01-02-hello-world
-2024-05-25T00:51:01-03:00,book/src/ch01-03-hello-cargo
+2024-12-30T09:47:19-03:00,book/src/ch01-03-hello-cargo
 2024-08-09T10:42:10+02:00,book/src/ch02-00-guessing-game-tutorial
 2023-04-04T20:21:23-03:00,book/src/ch03-00-common-programming-concepts
 2024-02-24T23:23:52-03:00,book/src/ch03-01-variables-and-mutability
 2024-05-27T22:03:57-03:00,book/src/ch03-02-data-types
 2024-02-26T17:12:21-03:00,book/src/ch03-03-how-functions-work
 2023-04-06T21:11:13-03:00,book/src/ch03-04-comments
-2024-05-27T22:03:57-03:00,book/src/ch03-05-control-flow
+2025-01-02T17:20:11-03:00,book/src/ch03-05-control-flow
 2023-04-06T22:38:39-03:00,book/src/ch04-00-understanding-ownership
 2024-02-26T17:12:21-03:00,book/src/ch04-01-what-is-ownership
 2024-05-10T17:44:55-04:00,book/src/ch04-02-references-and-borrowing
@@ -202,11 +204,12 @@
 2024-02-20T18:17:18-04:00,home/src/pages/aprende
 2024-04-30T21:53:24-03:00,home/src/pages/communities
 2024-08-21T23:18:57-03:00,home/src/pages/contributors
-2024-09-10T00:18:03-06:00,home/src/pages/index
+2024-12-29T02:44:13-04:00,home/src/pages/index
 2024-04-30T21:53:24-03:00,home/src/pages/mod
 2024-04-30T21:53:24-03:00,home/src/pages/projects
 ,blog/tags/angular
 ,blog/tags/anuncio-de-la-comunidad
+,blog/tags/cargo
 ,blog/tags/comunidad
 ,blog/tags/data-type
 ,blog/tags/devjournal
@@ -221,3 +224,4 @@
 ,blog/tags/rust
 ,blog/tags/safe
 ,blog/tags/strings
+,blog/tags/templates
