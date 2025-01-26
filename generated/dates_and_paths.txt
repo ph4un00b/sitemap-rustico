@@ -98,6 +98,7 @@
 2025-01-04T00:53:06Z,blog/esta_semana_en_rust/2025-01-01-this-week-in-rust
 2025-01-16T11:29:36-03:00,blog/esta_semana_en_rust/2025-01-08-this-week-in-rust
 2025-01-17T23:40:58-03:00,blog/esta_semana_en_rust/2025-01-15-this-week-in-rust
+2025-01-25T00:49:35Z,blog/esta_semana_en_rust/2025-01-22-this-week-in-rust
 2024-02-24T23:23:52-03:00,book/src/SUMMARY
 2023-09-28T21:31:58-03:00,book/src/appendix-00
 2023-06-06T23:54:19-03:00,book/src/appendix-01-keywords
@@ -146,9 +147,9 @@
 2025-01-16T10:21:22-03:00,book/src/ch09-02-recoverable-errors-with-result
 2025-01-16T10:21:22-03:00,book/src/ch09-03-to-panic-or-not-to-panic
 2024-05-14T10:58:03-03:00,book/src/ch10-00-generics
-2024-09-15T03:05:23-03:00,book/src/ch10-01-syntax
-2024-05-14T10:58:03-03:00,book/src/ch10-02-traits
-2024-05-14T10:58:03-03:00,book/src/ch10-03-lifetime-syntax
+2025-01-25T02:29:51-03:00,book/src/ch10-01-syntax
+2025-01-25T02:29:51-03:00,book/src/ch10-02-traits
+2025-01-25T02:29:51-03:00,book/src/ch10-03-lifetime-syntax
 2023-05-06T17:27:22-04:00,book/src/ch11-00-testing
 2024-05-25T00:51:01-03:00,book/src/ch11-01-writing-tests
 2024-02-24T23:23:52-03:00,book/src/ch11-02-running-tests
