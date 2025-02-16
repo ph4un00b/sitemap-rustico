@@ -98,8 +98,9 @@
 2025-01-04T00:53:06Z,blog/esta_semana_en_rust/2025-01-01-this-week-in-rust
 2025-01-16T11:29:36-03:00,blog/esta_semana_en_rust/2025-01-08-this-week-in-rust
 2025-01-17T23:40:58-03:00,blog/esta_semana_en_rust/2025-01-15-this-week-in-rust
-2025-01-25T00:49:35Z,blog/esta_semana_en_rust/2025-01-22-this-week-in-rust
-2025-02-01T00:56:19Z,blog/esta_semana_en_rust/2025-01-29-this-week-in-rust
+2025-02-09T16:48:02-05:00,blog/esta_semana_en_rust/2025-01-22-this-week-in-rust
+2025-02-09T16:48:02-05:00,blog/esta_semana_en_rust/2025-01-29-this-week-in-rust
+2025-02-14T23:41:08-05:00,blog/esta_semana_en_rust/2025-02-12-this-week-in-rust
 2024-02-24T23:23:52-03:00,book/src/SUMMARY
 2023-09-28T21:31:58-03:00,book/src/appendix-00
 2023-06-06T23:54:19-03:00,book/src/appendix-01-keywords
@@ -152,8 +153,8 @@
 2025-01-29T09:50:23+01:00,book/src/ch10-02-traits
 2025-01-25T02:29:51-03:00,book/src/ch10-03-lifetime-syntax
 2023-05-06T17:27:22-04:00,book/src/ch11-00-testing
-2024-05-25T00:51:01-03:00,book/src/ch11-01-writing-tests
-2024-02-24T23:23:52-03:00,book/src/ch11-02-running-tests
+2025-02-10T11:32:28-03:00,book/src/ch11-01-writing-tests
+2025-02-10T11:32:59-03:00,book/src/ch11-02-running-tests
 2024-05-25T00:51:01-03:00,book/src/ch11-03-test-organization
 2023-05-06T17:27:22-04:00,book/src/ch12-00-an-io-project
 2024-02-24T23:23:52-03:00,book/src/ch12-01-accepting-command-line-arguments
