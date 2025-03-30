@@ -106,6 +106,7 @@
 2025-03-08T00:43:43Z,blog/esta_semana_en_rust/2025-03-05-this-week-in-rust
 2025-03-15T00:55:54Z,blog/esta_semana_en_rust/2025-03-12-this-week-in-rust
 2025-03-22T00:56:12Z,blog/esta_semana_en_rust/2025-03-19-this-week-in-rust
+2025-03-29T00:57:28Z,blog/esta_semana_en_rust/2025-03-26-this-week-in-rust
 2024-02-24T23:23:52-03:00,book/src/SUMMARY
 2023-09-28T21:31:58-03:00,book/src/appendix-00
 2023-06-06T23:54:19-03:00,book/src/appendix-01-keywords
@@ -134,7 +135,7 @@
 2023-05-29T01:06:48-03:00,book/src/ch05-00-structs
 2024-05-25T00:51:01-03:00,book/src/ch05-01-defining-structs
 2024-05-25T00:51:01-03:00,book/src/ch05-02-example-structs
-2024-02-24T23:23:52-03:00,book/src/ch05-03-method-syntax
+2025-03-26T20:33:42-03:00,book/src/ch05-03-method-syntax
 2024-02-24T11:33:21-03:00,book/src/ch06-00-enums
 2024-02-26T17:12:21-03:00,book/src/ch06-01-defining-an-enum
 2024-03-01T19:24:15-05:00,book/src/ch06-02-match
