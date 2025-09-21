@@ -128,6 +128,7 @@
 2025-08-30T00:56:25Z,blog/esta_semana_en_rust/2025-08-27-this-week-in-rust
 2025-09-06T00:56:33Z,blog/esta_semana_en_rust/2025-09-03-this-week-in-rust
 2025-09-13T00:54:01Z,blog/esta_semana_en_rust/2025-09-10-this-week-in-rust
+2025-09-20T00:55:48Z,blog/esta_semana_en_rust/2025-09-17-this-week-in-rust
 2025-06-01T06:12:46-03:00,book/src/SUMMARY
 2023-09-28T21:31:58-03:00,book/src/appendix-00
 2025-04-19T13:06:53-03:00,book/src/appendix-01-keywords
