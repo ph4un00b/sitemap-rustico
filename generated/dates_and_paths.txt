@@ -131,6 +131,7 @@
 2025-09-20T00:55:48Z,blog/esta_semana_en_rust/2025-09-17-this-week-in-rust
 2025-09-27T00:55:53Z,blog/esta_semana_en_rust/2025-09-24-this-week-in-rust
 2025-10-04T00:54:47Z,blog/esta_semana_en_rust/2025-10-01-this-week-in-rust
+2025-10-11T00:55:33Z,blog/esta_semana_en_rust/2025-10-08-this-week-in-rust
 2025-06-01T06:12:46-03:00,book/src/SUMMARY
 2023-09-28T21:31:58-03:00,book/src/appendix-00
 2025-04-19T13:06:53-03:00,book/src/appendix-01-keywords
@@ -249,9 +250,9 @@
 2025-06-01T08:24:18-03:00,book/src/ch21-03-graceful-shutdown-and-cleanup
 2023-04-04T19:14:02-06:00,book/src/foreword
 2025-06-01T05:28:09-03:00,book/src/title-page
-2024-02-20T18:17:18-04:00,home/src/pages/aprende
-2024-04-30T21:53:24-03:00,home/src/pages/communities
-2024-08-21T23:18:57-03:00,home/src/pages/contributors
-2024-12-29T02:44:13-04:00,home/src/pages/index
+2025-10-07T21:52:56-03:00,home/src/pages/aprende
+2025-10-07T21:52:56-03:00,home/src/pages/communities
+2025-10-07T21:52:56-03:00,home/src/pages/contributors
+2025-10-08T05:08:11-03:00,home/src/pages/index
 2024-04-30T21:53:24-03:00,home/src/pages/mod
-2024-04-30T21:53:24-03:00,home/src/pages/projects
+2025-10-07T21:52:56-03:00,home/src/pages/projects
