@@ -160,6 +160,7 @@
 2026-04-04T01:25:54Z,blog/esta_semana_en_rust/2026-04-01-this-week-in-rust
 2026-04-11T01:28:53Z,blog/esta_semana_en_rust/2026-04-08-this-week-in-rust
 2026-04-18T01:45:28Z,blog/esta_semana_en_rust/2026-04-15-this-week-in-rust
+2026-04-25T01:47:46Z,blog/esta_semana_en_rust/2026-04-22-this-week-in-rust
 2025-06-01T06:12:46-03:00,book/src/SUMMARY
 2023-09-28T21:31:58-03:00,book/src/appendix-00
 2025-04-19T13:06:53-03:00,book/src/appendix-01-keywords
@@ -191,10 +192,10 @@
 2025-06-01T07:29:48-03:00,book/src/ch05-03-method-syntax
 2024-02-24T11:33:21-03:00,book/src/ch06-00-enums
 2026-04-13T10:19:06-04:00,book/src/ch06-01-defining-an-enum
-2024-12-08T20:07:13-03:00,book/src/ch06-02-match
+2026-04-25T08:56:10-04:00,book/src/ch06-02-match
 2025-06-01T17:50:55-03:00,book/src/ch06-03-if-let
 2025-06-01T18:05:46-03:00,book/src/ch07-00-managing-growing-projects-with-packages-crates-and-modules
-2024-05-25T00:51:01-03:00,book/src/ch07-01-packages-and-crates
+2026-04-25T09:27:33-04:00,book/src/ch07-01-packages-and-crates
 2025-06-01T07:29:48-03:00,book/src/ch07-02-defining-modules-to-control-scope-and-privacy
 2025-06-01T18:05:46-03:00,book/src/ch07-03-paths-for-referring-to-an-item-in-the-module-tree
 2025-06-01T18:05:46-03:00,book/src/ch07-04-bringing-paths-into-scope-with-the-use-keyword
