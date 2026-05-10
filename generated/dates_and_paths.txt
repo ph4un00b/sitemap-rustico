@@ -161,6 +161,7 @@
 2026-04-11T01:28:53Z,blog/esta_semana_en_rust/2026-04-08-this-week-in-rust
 2026-04-18T01:45:28Z,blog/esta_semana_en_rust/2026-04-15-this-week-in-rust
 2026-04-25T01:47:46Z,blog/esta_semana_en_rust/2026-04-22-this-week-in-rust
+2026-05-09T02:08:58Z,blog/esta_semana_en_rust/2026-05-06-this-week-in-rust
 2025-06-01T06:12:46-03:00,book/src/SUMMARY
 2023-09-28T21:31:58-03:00,book/src/appendix-00
 2025-04-19T13:06:53-03:00,book/src/appendix-01-keywords
@@ -175,7 +176,7 @@
 2025-06-01T06:12:46-03:00,book/src/ch01-01-installation
 2025-06-01T05:28:09-03:00,book/src/ch01-02-hello-world
 2025-04-19T13:25:09-03:00,book/src/ch01-03-hello-cargo
-2025-04-19T13:25:09-03:00,book/src/ch02-00-guessing-game-tutorial
+2026-05-03T20:28:55-05:00,book/src/ch02-00-guessing-game-tutorial
 2023-04-04T20:21:23-03:00,book/src/ch03-00-common-programming-concepts
 2024-02-24T23:23:52-03:00,book/src/ch03-01-variables-and-mutability
 2025-06-01T18:13:09-03:00,book/src/ch03-02-data-types
